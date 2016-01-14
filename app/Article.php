@@ -40,4 +40,11 @@ class Article extends Model
     {
     	$query->where('published_at', '>', Carbon::now());
     }
+
+    // The article belongs to a user.
+
+    public function user()
+    {
+    	return $this->belongsTo('App\User');
+    }
 }

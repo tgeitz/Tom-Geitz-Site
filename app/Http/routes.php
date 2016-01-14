@@ -25,18 +25,21 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
 
-Route::get('/', function () {
-	return view('pages/home');
-});
-Route::get('articles', 'ArticlesController@index');
-Route::get('articles/create', 'ArticlesController@create');
-Route::post('articles', 'ArticlesController@store');
-Route::patch('articles/{id}', 'ArticlesController@update');
-Route::get('articles/{id}/edit', 'ArticlesController@edit');
-Route::get('articles/{id}', 'ArticlesController@show');
-// Route::resource('articles', 'ArticlesController');
+Route::group(['middleware' => 'web'], function () {
+	
+	Route::auth();
+    Route::get('/', function() {
+    	return view('welcome');
+    });
+    Route::get('/home', 'HomeController@index');
 
+	Route::get('articles', 'ArticlesController@index');
+	Route::get('articles/create', 'ArticlesController@create');
+	Route::post('articles', 'ArticlesController@store');
+	Route::patch('articles/{id}', 'ArticlesController@update');
+	Route::get('articles/{id}/edit', 'ArticlesController@edit');
+	Route::get('articles/{id}', 'ArticlesController@show');
 
+    
 });
