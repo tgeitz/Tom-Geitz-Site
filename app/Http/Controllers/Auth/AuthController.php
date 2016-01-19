@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -70,8 +72,22 @@ class AuthController extends Controller
         ]);
     }
 
-    public function login()
+    public function showLoginForm()
     {
         return view('auth.login');
+    }
+
+    public function login()
+    {
+        $email = Input::get('email');
+        $password = Input::get('password');
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            return redirect()->intended('/');
+        }
+    }
+
+    public function logout()
+    {
+        return Auth::logout();
     }
 }
