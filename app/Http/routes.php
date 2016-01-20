@@ -42,5 +42,9 @@ Route::group(['middleware' => 'web'], function () {
 	Route::get('articles/{id}/edit', 'ArticlesController@edit');
 	Route::get('articles/{id}', 'ArticlesController@show');
 
+    Route::get('resume', function() {
+        return view('pages/resume');
+    });
+
     
 });
