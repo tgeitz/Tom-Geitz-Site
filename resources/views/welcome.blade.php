@@ -22,18 +22,21 @@
         <a href="/resume" class="btn btn-default">Resume</a>
     </div>
 </div>
-    </div>
     <hr/>
-    <div>
+<div class="col-md-10 col-md-offset-1">
+    <div class="row">
         <h2>Projects</h2>
     </div>
-    <hr/>
-    <div>
+</div>
+<hr/>
+<div class="col-md-10 col-md-offset-1">
+    <div class="row">
         <h2>Recent Articles</h2>
         <h3>Coding</h3>
         <h3>Smash</h3>
         <h3>Music</h3>
     </div>
 </div>
+
 
 @endsection
