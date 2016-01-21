@@ -8,8 +8,11 @@ use App\Http\Requests;
 use App\Http\Requests\ArticleRequest;
 use App\Http\Controllers\Controller;
 use App\Article;
+use App\User;
 use App\Http\Controllers\Auth\AuthController;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 
 class ArticlesController extends Controller
 {
@@ -33,8 +36,9 @@ class ArticlesController extends Controller
 
     public function store(ArticleRequest $request)
     {
-    	Auth::user()->articles()->create($request->all());
-    	return redirect('articles');
+    	Auth::user()->article()->create($request->all());
+        \Session::flash('flash_message', 'Your article has been created!');
+        return redirect('articles');
     }
 
     public function edit($id)
