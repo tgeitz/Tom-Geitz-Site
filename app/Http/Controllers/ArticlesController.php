@@ -13,6 +13,7 @@ use App\Http\Controllers\Auth\AuthController;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
+use App\Tag;
 
 class ArticlesController extends Controller
 {
@@ -31,12 +32,16 @@ class ArticlesController extends Controller
 
     public function create()
     {
-    	return view('articles.create');
+        $tags = Tag::lists('name', 'id');
+    	return view('articles.create')->with('tags', $tags);
     }
 
     public function store(ArticleRequest $request)
     {
-    	Auth::user()->article()->create($request->all());
+    	$article = Auth::user()->articles()->create($request->all());
+        $tagIds = $request->input('tags');
+        $article->tags()->attach($tagIds);
+
         \Session::flash('flash_message', 'Your article has been created!');
         return redirect('articles');
     }

@@ -26,7 +26,7 @@ class User extends Authenticatable
 
     // The user can have many articles.
 
-    public function article()
+    public function articles()
     {
         return $this->hasMany('App\Article');
     }

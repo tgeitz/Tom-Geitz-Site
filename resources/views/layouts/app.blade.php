@@ -26,7 +26,6 @@
     </style>
 </head>
 <body id="app-layout">
-    @include('_flash')
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -72,6 +71,8 @@
             </div>
         </div>
     </nav>
+
+    @include('_flash')
 
     @yield('content')
 

@@ -13,6 +13,8 @@
 		{!! Form::label('published_at', 'Publish on:') !!}
 		{!! Form::input('date', 'published_at', date('Y-m-d'), ['class' => 'form-control']) !!}
 	</div>
+        {!! Form::label('tags', 'Tags:') !!}
+        {!! Form::select('tags[]', $tags, null, ['class' => 'form-control', 'multiple']) !!}
 	<!-- Submit Form Input -->
 	<div class-"form-group">
 		{!! Form::submit($submitButtonText, ['class' => 'btn btn-primary form-control']) !!}
