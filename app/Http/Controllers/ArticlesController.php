@@ -26,7 +26,6 @@ class ArticlesController extends Controller
     public function show($id)
     {
     	$article = Article::findOrFail($id);
-    	dd($article->published_at);
     	return view('articles.show')->with('article', $article);
     }
 
@@ -49,7 +48,8 @@ class ArticlesController extends Controller
     public function edit($id)
     {
     	$article = Article::findOrFail($id);
-    	return view('articles.edit')->with('article', $article);
+        $tags = Tag::lists('name', 'id');
+        return view('articles.edit', compact('article', 'tags'));
     }
 
     public function update($id, ArticleRequest $request)

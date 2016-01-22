@@ -22,6 +22,9 @@ class Article extends Model
 
     // Mutator used to manipulate data before it is entered into the database.
 
+    /**
+     * @param $date
+     */
     public function setPublishedAtAttribute($date)
     {
     	$this->attributes['published_at'] = Carbon::parse($date);
@@ -29,6 +32,9 @@ class Article extends Model
 
     // Query scope used to only display articles where 'published_at' is less than now.
 
+    /**
+     * @param $query
+     */
     public function scopePublished($query)
     {
     	$query->where('published_at', '<=', Carbon::now());
@@ -36,6 +42,9 @@ class Article extends Model
 
     // Query scope used to only display articles that are set to be published in the future.
 
+    /**
+     * @param $query
+     */
     public function scopeUnpublished($query)
     {
     	$query->where('published_at', '>', Carbon::now());
@@ -43,6 +52,9 @@ class Article extends Model
 
     // The article belongs to a user.
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function user()
     {
     	return $this->belongsTo('App\User');
@@ -50,8 +62,21 @@ class Article extends Model
 
     // Get the tags associated with the given article.
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function tags()
     {
         return $this->belongsToMany('App\Tag')->withTimestamps();
+    }
+
+    /**
+     * Get a list of tag ids associated with current article.
+     *
+     * @return array
+     */
+    public function getTagListAttribute()
+    {
+        return $this->tags->lists('id')->all();
     }
 }

@@ -8,7 +8,7 @@
 		{{ $article->body }}
 	</article>
 
-@unless
+@unless ($article->tags->isEmpty())
     <h5>Tags:</h5>
     <ul>
         @foreach($article->tags as $tag)
@@ -16,5 +16,5 @@
         @endforeach
     </ul>
 @endunless
-    
+
 @stop
