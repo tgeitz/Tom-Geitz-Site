@@ -15,6 +15,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href='css/app.css' rel="stylesheet">
 
+    <!-- Select2 Boxes -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css" rel="stylesheet" />
+
     <style>
         body {
             font-family: 'Lato';
@@ -83,5 +86,7 @@
     <script>
         $('div.alert').not('.alert-important').delay(3000).slideUp(300);
     </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    @yield('footer')
 </body>
 </html>
