@@ -28,6 +28,16 @@
         <h2>Projects</h2>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-4 col-md-offset-1">
+        <h3><a href="http://www.pmunderground.net/">Project M Underground</a></h3>
+        <h5>A community site for the game <strong>Super Smash Bros.: Project M</strong>.  I help with the back end.</h5>
+    </div>
+    <div class="col-md-4 col-md-offset-1">
+        <h3><a href="https://lit-waters-8964.herokuapp.com/">Place My Order</a></h3>
+        <h5>A restaurant ordering app built with DoneJS.</h5>
+    </div>
+</div>
 <hr/>
 <div class="col-md-10 col-md-offset-1">
     <div class="row">
