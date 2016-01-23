@@ -1,11 +1,4 @@
-.projectsbox {
-    background-color: #cc3300;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    width: 300px;
-    height: 130px;
-}
+
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -84,18 +77,24 @@
     margin: auto;
 }
 
+
+
 .project-box {
     background-color: black;
     width: 300px;
     height: 100px;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 2px;
     border-radius: 5px;
 }
 
 .project-box-desc {
+    width: 300px;
+    height: auto;
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .pmu-image {

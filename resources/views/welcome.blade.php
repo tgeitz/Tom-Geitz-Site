@@ -48,75 +48,77 @@
     </div>
 </div>
 
-{{--<!-- /.articles-section -->--}}
-{{--<div class="articles-section">--}}
-    {{--<div class="container">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8">--}}
-                {{--<h1><strong>Recent Articles</strong></h1>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8">--}}
-                {{--<div class="articles-box">--}}
-                    {{--<h3>No articles yet!</h3>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
-    {{--<!-- /.container -->--}}
+<!-- /.articles-projects-container -->
+<div class="container articles-projects-container">
+    <div class="row">
 
-</div>
-<!-- /.articles-section -->
+        <!-- /.articles-section -->
+        <div class="articles-section">
+            <div class="col-md-7">
+                <div class="row">
+                    <h1><strong>Recent Articles</strong></h1>
+                </div>
+                <div class="row">
 
-<!-- /.projects-section -->
-<div class="projects-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <h1><strong>Projects</strong></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <a href="http://www.pmunderground.net/">
-                    <div class="project-box">
-                        <img src="../images/project-m-inverted.jpg" class="pmu-image"/>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <div class="project-box-desc">
-                    <h3><strong>PM Underground</strong></h3>
-                    <h4>Community site for the popular game Super Smash Bros: Project M.  I help run the server.</h4>
+                        <div class="articles-box">
+                            <h3>No articles yet!</h3>
+                        </div>
+
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <a href="https://lit-waters-8964.herokuapp.com/">
-                    <div class="project-box">
-                        <img src="../images/knife-fork.png" class="place-my-order-image"/>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-8">
-                <div class="project-box-desc">
-                    <h3><strong>Place My Order</strong></h3>
-                    <h4>A real-time restaurant ordering app I created using the JavaScript framework DoneJS.</h4>
-                </div>
-            </div>
-        </div>
+            <!-- /.container -->
 
+        </div>
+        <!-- /.articles-section -->
+
+        <!-- /.projects-section -->
+        <div class="projects-section">
+            <div class="col-md-4 col-md-offset-1">
+                <div class="row">
+
+                        <h1><strong>Projects</strong></h1>
+
+                </div>
+
+
+                        <a href="http://www.pmunderground.net/">
+                            <div class="project-box">
+                                <img src="../images/project-m-inverted.jpg" class="pmu-image"/>
+                            </div>
+                        </a>
+
+
+
+
+                        <div class="project-box-desc">
+                            <h3><strong>PM Underground</strong></h3>
+                            <h4>Community site for the popular game Super Smash Bros: Project M.  I help run the server.</h4>
+                        </div>
+
+
+
+
+                        <a href="https://lit-waters-8964.herokuapp.com/">
+                            <div class="project-box">
+                                <img src="../images/knife-fork.png" class="place-my-order-image"/>
+                            </div>
+                        </a>
+
+
+
+                        <div class="project-box-desc">
+                            <h3><strong>Place My Order</strong></h3>
+                            <h4>A real-time restaurant ordering app I created using the JavaScript framework DoneJS.</h4>
+                        </div>
+
+
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.projects-section -->
     </div>
-    <!-- /.container -->
-
 </div>
-<!-- /.projects-section -->
-
 
 @endsection
