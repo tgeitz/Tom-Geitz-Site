@@ -1,3 +1,114 @@
-#main-monkey {
-width: 100%;
+.projectsbox {
+    background-color: #cc3300;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 300px;
+    height: 130px;
 }
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../images/mountains.png) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.intro-social {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+.intro-message > h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.pmu-box {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.pmu-box img {
+    height: 70px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.place-my-order-box {
+    background-color: black;
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.place-my-order-box img {
+    height: 70px;
+    width: 70px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 15px;
+    margin-bottom: 15px;
