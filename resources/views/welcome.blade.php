@@ -81,7 +81,7 @@
             <div class="col-md-4 col-md-offset-8">
                 <a href="http://www.pmunderground.net/">
                     <div class="project-box">
-                        <img src="../images/projectminverted.jpg" class="pmu-image"/>
+                        <img src="../images/project-m-inverted.jpg" class="pmu-image"/>
                     </div>
                 </a>
             </div>
