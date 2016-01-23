@@ -66,6 +66,12 @@
     }
 }
 
+.intro-paragraph h3 {
+    line-height: 130%
+}
+
+
+
 .navbar {
     margin-bottom: 0px;
 }
@@ -78,16 +84,21 @@
     margin: auto;
 }
 
-.pmu-box {
+.project-box {
     background-color: black;
     width: 300px;
     height: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 2px;
     border-radius: 5px;
 }
 
-.pmu-box img {
+.project-box-desc {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pmu-image {
     height: 70px;
     width: 200px;
     margin-left: 50px;
@@ -96,19 +107,19 @@
     margin-bottom: 15px;
 }
 
-.place-my-order-box {
-    background-color: black;
-    width: 300px;
-    height: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-}
-
-.place-my-order-box img {
+.place-my-order-image {
     height: 70px;
     width: 70px;
     margin-left: 115px;
     margin-right: 115px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.articles-box {
+    width: auto;
+    height: 800px;
+    border-style: solid;
+    border-width: 30px 2px 2px 2px;
+    border-radius: 15px;
+}
