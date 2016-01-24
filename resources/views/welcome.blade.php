@@ -41,7 +41,7 @@
 <div class="intro-paragraph">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 center-block">
                 <h3>I specialize in server-side Laravel development, but I'm also delighted by front-end work.  I'm a writer, multi-instrumentalist, and very likely the best Super Smash Bros player you'll ever meet.</h3>
             </div>
         </div>
@@ -55,15 +55,23 @@
         <!-- /.articles-section -->
         <div class="articles-section">
             <div class="col-md-7">
-                <div class="row">
-                    <h1><strong>Recent Articles</strong></h1>
-                </div>
-                <div class="row">
-
-                        <div class="articles-box">
-                            <h3>No articles yet!</h3>
-                        </div>
-
+                <h1><strong>Recent Articles</strong></h1>
+                <div class="articles-box">
+                    <ul style="list-style: none;">
+                        @foreach ($articles as $article)
+                            <li>
+                                <div class="article-instance">
+                                    <h1>
+                                    <a href='{{ url('/articles', [$article->id]) }}'>{{ $article->title }}</a>
+                                    </h1>
+                                    <h4>{{ $article->published_at->diffForHumans() }}</h4>
+                                </div>
+                            </li>
+                        @endforeach
+                    </ul>
+                    <div class="see-more">
+                        <h3><a href="/articles">See more!</a></h3>
+                    </div>
                 </div>
             </div>
             <!-- /.container -->
@@ -74,44 +82,25 @@
         <!-- /.projects-section -->
         <div class="projects-section">
             <div class="col-md-4 col-md-offset-1">
-                <div class="row">
-
-                        <h1><strong>Projects</strong></h1>
-
-                </div>
-
-
-                        <a href="http://www.pmunderground.net/">
-                            <div class="project-box">
-                                <img src="../images/project-m-inverted.jpg" class="pmu-image"/>
-                            </div>
-                        </a>
-
-
-
-
-                        <div class="project-box-desc">
-                            <h3><strong>PM Underground</strong></h3>
-                            <h4>Community site for the popular game Super Smash Bros: Project M.  I help run the server.</h4>
+                <h1><strong>Projects</strong></h1>
+                    <a href="http://www.pmunderground.net/">
+                        <div class="project-box">
+                            <img src="../images/project-m-inverted.jpg" class="pmu-image"/>
                         </div>
-
-
-
-
-                        <a href="https://lit-waters-8964.herokuapp.com/">
-                            <div class="project-box">
-                                <img src="../images/knife-fork.png" class="place-my-order-image"/>
-                            </div>
-                        </a>
-
-
-
-                        <div class="project-box-desc">
-                            <h3><strong>Place My Order</strong></h3>
-                            <h4>A real-time restaurant ordering app I created using the JavaScript framework DoneJS.</h4>
+                    </a>
+                    <div class="project-box-desc">
+                        <h3><strong>PM Underground</strong></h3>
+                        <h4>Community site for the popular game Super Smash Bros: Project M.  I help run the server.</h4>
+                    </div>
+                    <a href="https://lit-waters-8964.herokuapp.com/">
+                        <div class="project-box">
+                            <img src="../images/knife-fork.png" class="place-my-order-image"/>
                         </div>
-
-
+                    </a>
+                    <div class="project-box-desc">
+                        <h3><strong>Place My Order</strong></h3>
+                        <h4>A real-time restaurant ordering app I created using the JavaScript framework DoneJS.</h4>
+                    </div>
 
             </div>
             <!-- /.container -->
