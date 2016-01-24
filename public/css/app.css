@@ -151,3 +151,7 @@ a {
     text-align: center;
     color: grey;
 }
+
+.show-article-section h4{
+    margin-top: 50px;
+}

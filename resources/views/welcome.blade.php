@@ -70,7 +70,7 @@
                         @endforeach
                     </ul>
                     <div class="see-more">
-                        <h3><a href="/articles">See more!</a></h3>
+                        <h3><a href="/articles">See more >></a></h3>
                     </div>
                 </div>
             </div>
