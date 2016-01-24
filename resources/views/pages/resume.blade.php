@@ -4,7 +4,7 @@
 <div class="container">
     <h1>Tom Geitz</h1>
     <h2>Web Developer Resume</h2>
-    <p>tgeitz@gmail.com | 331-826-8473 | http://www.tomgeitz.com</p>
+    <p>tgeitz@gmail.com | 331-826-8473 | <a href="http://www.tomgeitz.com">http://www.tomgeitz.com</p>
     <hr/>
     <h3>Summary</h3>
         <ul>
@@ -16,7 +16,7 @@
         </ul>
     <h3>Skills</h3>
         <ul>
-            <li><strong>Technologies:</strong> PHP, MySQL, JavaScript, HTML5, CSS3, Laravel Framework, Joomla!, GitHub, ReactJS, Bootstrap, Sass</li>
+            <li><strong>Technologies:</strong> PHP, MySQL, JavaScript, HTML5, CSS3, Laravel Framework, Joomla!, GitHub, Bootstrap, Sass</li>
             <li><strong>Applications:</strong> Microsoft Office, Microsoft Visio, Adobe Photoshop</li>
             <li><strong>Writing:</strong> Can quickly write concise, accurate, easy-to-read content with excellent spelling and grammar.</li>
             <li><strong>Languages:</strong> Can read, speak, and write in conversational Spanish.</li>

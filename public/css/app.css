@@ -144,3 +144,10 @@ a {
     height: 75px;
     text-align: center;
 }
+
+.copyright-footer {
+    margin-top: 75px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: grey;
+}
