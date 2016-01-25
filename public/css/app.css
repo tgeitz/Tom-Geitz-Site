@@ -152,6 +152,37 @@ a {
     color: grey;
 }
 
-.show-article-section h4{
+.show-article-section {
+    margin-top: 40px;
+}
+
+.show-article-section article{
+    margin-top: 75px;
+    margin-bottom: 35px;
+    font-size: 130%;
+}
+
+.show-article-section h4 {
     margin-top: 50px;
+}
+
+.article-index h2 {
+    margin-top: 50px;
+    text-align:center;
+}
+
+.article-index h4 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.article-index {
+    margin-top: 40px;
+
+}
+
+.article-list {
+    margin-top: 75px;
+
 }

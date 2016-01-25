@@ -15,13 +15,13 @@
                 <div class="intro-social">
                     <ul class="list-inline intro-social-buttons">
                         <li>
-                            <a href="https://twitter.com/tom_geitz" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a target="_blank" href="https://twitter.com/tom_geitz" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/tgeitz" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a target="_blank" href="https://github.com/tgeitz" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/tom-geitz-62b44797" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/tom-geitz-62b44797" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                         </li>
                         <li>
                             <a href="/resume" class="btn btn-default btn-lg"><i class="fa fa-user fa-fw"></i> <span class="network-name">Resume</span></a>
@@ -55,7 +55,7 @@
         <!-- /.articles-section -->
         <div class="articles-section">
             <div class="col-md-7">
-                <h1><strong>Recent Articles</strong></h1>
+                <h1><strong><i class="fa fa-pencil-square fa-fw"></i>Recent Articles</strong></h1>
                 <div class="articles-box">
                     <ul style="list-style: none;">
                         @foreach ($articles as $article)
