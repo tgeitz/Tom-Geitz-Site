@@ -83,6 +83,15 @@
         <div class="projects-section">
             <div class="col-md-4 col-md-offset-1">
                 <h1><strong>Projects</strong></h1>
+                    <a href="http://www.tgeitz.github.io/ReactVideoPlayer/">
+                        <div class="project-box">
+                            <img src="../images/youtube3-128.png" class="react-video-player-image"/>
+                        </div>
+                    </a>
+                    <div class="project-box-desc">
+                        <h3><strong>React Video Player</strong></h3>
+                        <h4>A YouTube video player I built with ReactJS that updates itself when you type in the search bar.</h4>
+                    </div>
                     <a href="http://www.pmunderground.net/">
                         <div class="project-box">
                             <img src="../images/project-m-inverted.jpg" class="pmu-image"/>

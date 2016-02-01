@@ -113,6 +113,16 @@
     margin-bottom: 15px;
 }
 
+.react-video-player-image {
+    height: 70px;
+    width: 70px;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
 .place-my-order-image {
     height: 70px;
     width: 70px;
