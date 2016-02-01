@@ -83,7 +83,7 @@
         <div class="projects-section">
             <div class="col-md-4 col-md-offset-1">
                 <h1><strong>Projects</strong></h1>
-                    <a href="http://www.tgeitz.github.io/ReactVideoPlayer/">
+                    <a href="http://tgeitz.github.io/ReactVideoPlayer/">
                         <div class="project-box">
                             <img src="../images/youtube3-128.png" class="react-video-player-image"/>
                         </div>
