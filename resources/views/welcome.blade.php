@@ -59,7 +59,7 @@
                 <div class="articles-box">
                     <ul style="list-style: none;">
                         @foreach ($articles as $article)
-                            <li>
+                            <li style="padding-bottom: 30px;">
                                 <div class="article-instance">
                                     <h1>
                                     <a href='{{ url('/articles', [$article->id]) }}'>{{ $article->title }}</a>
